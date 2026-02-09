@@ -55,29 +55,10 @@ Proyecto en desarrollo – versión 1.0 funcional.
 - Gráficos: https://matplotlib.org/stable/
 
 ## Ejecución
-1. Crear la base de datos en pgAdmin 4
-2. Ingresar esta consulta en la base de datos creada:
-```sql
-    CREATE TABLE habitos (  
-        id_habito SERIAL PRIMARY KEY,  
-        nombre_habito VARCHAR(100) NOT NULL,  
-        tipo_habito  VARCHAR(15) NOT NULL,  
-        descripcion VARCHAR(100) NOT NULL  
-    );  
-      
-    CREATE TABLE fecha (  
-        id_fecha SERIAL PRIMARY KEY,  
-        fecha_habitos DATE NOT NULL  
-    );  
-      
-    CREATE TABLE registro_habitos (
-        id_registro SERIAL PRIMARY KEY,
-        id_habito INT NOT NULL REFERENCES habitos(id_habito),
-        id_fecha INT NOT NULL REFERENCES fecha(id_fecha),
-        completado BOOLEAN NOT NULL DEFAULT FALSE
-    ); 
-```
-3. Configurar credenciales, están en `connection/connection_db.py
-4. En la terminal:`uvicorn backend.main:app --host 127.0.0.1 --port 8000` para iniciar el servidor.
-5. Ejecutar `main.py` del frontend
+1. Clona el repositorio
+2. Crear archivo `.env`, deje un `.env.example` como referencia. 
+3. Ejecuta el comando `docker compose up --build` para levantar backend y base de datos
+4. Luego en la terminal del proyeto, cambias a la carpeta frontend `cd frontend` y ejecutas el comando `pip install -r requirements.txt`
+5. Ejecutas `python main.py `
+6. Listo. =) 
 

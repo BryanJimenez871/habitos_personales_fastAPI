@@ -1,7 +1,7 @@
 import os
 import datetime
 
-from frontend.exceptions.custom_exceptions import HabitException
+from exceptions.custom_exceptions import HabitException
 from PySide6.QtCore import Signal
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QPushButton, QHBoxLayout, QWidget, QMessageBox

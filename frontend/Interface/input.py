@@ -4,9 +4,9 @@ from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout,
                                QTextEdit, QLineEdit, QLabel, QListWidget, QMessageBox, QDialog, )
 
-from frontend.exceptions.custom_exceptions import HabitException
+from exceptions.custom_exceptions import HabitException
 
-from frontend import Interface
+import Interface
 
 
 class AddHabitDialog(QDialog):

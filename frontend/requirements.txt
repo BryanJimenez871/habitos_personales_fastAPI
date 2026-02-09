@@ -1,0 +1,6 @@
+fastapi==0.128.0
+matplotlib==3.10.8
+pyside6==6.10.1
+pyside6_addons==6.10.1
+pyside6_essentials==6.10.1
+Requests==2.32.5

@@ -1,6 +1,6 @@
 import os
 import requests
-from frontend import Interface
+import Interface
 
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QIcon, QAction

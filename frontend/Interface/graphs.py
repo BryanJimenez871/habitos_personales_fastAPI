@@ -6,9 +6,9 @@ from fastapi import HTTPException
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
-from frontend import Interface
-from frontend.exceptions.custom_exceptions import HabitException
-from frontend.Interface import ShowMessage
+import Interface
+from exceptions.custom_exceptions import HabitException
+from Interface import ShowMessage
 
 
 class GridGraphs(QWidget):

@@ -3,6 +3,9 @@
 venv/
 env/
 
+# Variables de entorno
+.env
+
 # PyCharm
 .idea/
 
